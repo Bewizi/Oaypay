@@ -1,0 +1,27 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap");
+
+@theme {
+  /* Your custom branding colors */
+  --color-dark-slate-grey-800: #14403d;
+  --color-jungle-teal-600: #427b61;
+  --color-mint-leaf-500: #40b799a3;
+  --color-white-200: #ffffff75;
+  --color-alabaster-grey-100: #e2e6e9;
+  --color-lime-cream-300: #c8f069;
+  --color-pine-teal-800: #245d50;
+  --color-evergreen-900: #043f2d;
+  --color-carbon-black-900: #191919;
+  --color-charcoal-blue-700: #4b5560;
+  --color-bright-snow-50: #f7f7f7;
+
+  /* You can also add custom spacing or fonts here */
+  --font-sans-serif: "Urbanist", sans-serif;
+}
+
+img {
+  /* Ensure images are responsive */
+  max-width: 100%;
+  display: block;
+  object-fit: cover;
+}
