@@ -2,6 +2,7 @@ import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 import 'package:oaypay/components/card_container.dart';
 import 'package:oaypay/components/conatiner.dart';
+import 'package:oaypay/components/main_headers.dart';
 
 class OurServices extends StatelessComponent {
   const OurServices({super.key});
@@ -44,17 +45,12 @@ class OurServices extends StatelessComponent {
     return section(classes: 'py-20', [
       AppConatiner(
         children: [
-          h6(classes: 'uppercase text-evergreen-900 mb-4 text-xl text-evergreen-900 font-medium', [
-            .text('our services'),
-          ]),
-          h4(classes: 'mb-5 text-carbon-black-900 text-6xl font-medium', [
-            .text('Exclusive range of services to manage your finance and spending'),
-          ]),
-          p(classes: 'text-2xl text-charcoal-blue-700 font-regular', [
-            .text(
-              'Enjoy a world of financial possibilities and full access to financial services personalized to your needs.',
-            ),
-          ]),
+          MainHeaders(
+            title: 'our services',
+            description: 'Exclusive range of services to manage your finance and spending',
+            text:
+                'Enjoy a world of financial possibilities and full access to financial services personalized to your needs.',
+          ),
 
           section(classes: 'pt-20 grid grid-cols-3 gap-8', [
             ...services.map(
