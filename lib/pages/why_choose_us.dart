@@ -53,7 +53,7 @@ class WhyChooseUs extends StatelessComponent {
         ],
       ),
 
-      div(classes: 'mt-20  ', [
+      div(classes: 'mt-20', [
         section(classes: 'flex gap-12 ', [
           ...features.map(
             (e) {
