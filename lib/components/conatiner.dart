@@ -9,6 +9,6 @@ class AppConatiner extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    return section(classes: 'max-w-7xl mx-auto px-6 ${classes ?? ""}', [...children]);
+    return section(classes: 'max-w-screen-2xl mx-auto px-12 ${classes ?? ""}', [...children]);
   }
 }
