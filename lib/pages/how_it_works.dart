@@ -39,18 +39,18 @@ class HowItWorks extends StatelessComponent {
             text: 'Easy 3 steps to use our services',
           ),
 
-          section(classes: 'mt-20 flex gap-8', [
+          section(classes: 'mt-20 flex flex-col md:flex-row items-center justify-center gap-8', [
             // flex this container on large screens and stack on small screens
             div([
               ...steps.map((step) {
-                return div(classes: 'flex items-center gap-8 mb-12', [
+                return div(classes: 'flex flex-col md:flex-row items-start md:items-center  gap-8 mb-12', [
                   // icons
                   img(src: '/svgs/${step['icon']}', alt: step['alt_text']!),
                   div([
                     // header
-                    h1(classes: 'font-bold text-3xl text-evergreen-900 mb-5', [.text(step['title']!)]),
+                    h1(classes: 'font-bold text-xl md:text-3xl text-evergreen-900 mb-5', [.text(step['title']!)]),
                     // description
-                    p(classes: 'text-charcoal-blue-700 text-2xl w-4/5', [
+                    p(classes: 'text-charcoal-blue-700  md:text-2xl w-4/5', [
                       .text(step['description']!),
                     ]),
                   ]),
@@ -58,7 +58,7 @@ class HowItWorks extends StatelessComponent {
               }),
               const AppButton(),
             ]),
-            img(src: '/images/how_it_works.png', alt: 'How It Works Image', classes: 'w-1/2'),
+            img(src: '/images/how_it_works.png', alt: 'How It Works Image', classes: 'md:w-1/2'),
           ]),
         ],
       ),
