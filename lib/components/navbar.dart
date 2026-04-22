@@ -15,7 +15,7 @@ class Navbar extends StatelessComponent {
             h1(classes: 'text-3xl font-bold uppercase', [
               .text('oaypay'),
             ]),
-            nav(classes: 'ml-14', [
+            nav(classes: 'ml-14 hidden lg:block', [
               ul(classes: 'flex gap-10 items-center', [
                 li([
                   a(href: '/', [.text('Home')]),
