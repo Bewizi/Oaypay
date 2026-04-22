@@ -1,0 +1,5 @@
+{
+  "installCommand": "amazon-linux-extras install dart -y || (curl --location --silent --fail https://storage.googleapis.com/dart-archive/channels/stable/release/latest/linux_packages/dart_stable.x86_64.rpm -o dart.rpm && yum install -y ./dart.rpm)",
+  "buildCommand": "dart pub global activate jaspr_cli && dart pub get && $HOME/.pub-cache/bin/jaspr build",
+  "outputDirectory": "build/jaspr"
+}
