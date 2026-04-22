@@ -37,10 +37,13 @@ jobs:
       - name: 'Setup Dart'
         uses: dart-lang/setup-dart@v1.3
 
-      - name: 'Build Jaspr'
+      - name: 'Install Dependencies & Build Jaspr'
         run: |
           dart pub global activate jaspr_cli
-          jaspr build --verbose
+          
+          dart pub get
+          
+          dart pub global run jaspr_cli:jaspr build --verbose
       # -----------------------------------------
 
       - name: Upload artifact
