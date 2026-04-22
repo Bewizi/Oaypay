@@ -52,7 +52,7 @@ class OurServices extends StatelessComponent {
                 'Enjoy a world of financial possibilities and full access to financial services personalized to your needs.',
           ),
 
-          section(classes: 'pt-20 grid grid-cols-3 gap-8', [
+          section(classes: 'pt-20 grid grid-cols-1 md:grid-cols-3 gap-8', [
             ...services.map(
               (e) => CardContainer(
                 classes: 'flex flex-col items-center justify-center',
@@ -63,8 +63,8 @@ class OurServices extends StatelessComponent {
                       img(src: '/images/${e['icon']}', alt: 'Transfer Icon', width: 32, height: 32),
                     ],
                   ),
-                  h3(classes: 'font-bold text-3xl text-carbon-black-900  mb-5', [.text(e['title']!)]),
-                  p(classes: 'text-charcoal-blue-700 text-2xl font-regular text-center', [
+                  h3(classes: 'font-bold text-2xl md:text-3xl text-carbon-black-900  mb-5', [.text(e['title']!)]),
+                  p(classes: 'text-charcoal-blue-700 text-lg md:text-2xl font-regular text-center', [
                     .text(
                       e['description']!,
                     ),
