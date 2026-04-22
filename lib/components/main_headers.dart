@@ -19,10 +19,10 @@ class MainHeaders extends StatelessComponent {
       h6(classes: 'uppercase text-evergreen-900 mb-4 text-xl  font-medium }', [
         .text(title ?? ''),
       ]),
-      h2(classes: 'mb-5 text-carbon-black-900 text-6xl font-medium', [
+      h2(classes: 'mb-5 text-carbon-black-900 text-4xl md:text-6xl font-medium', [
         .text(description ?? ''),
       ]),
-      p(classes: 'text-2xl text-charcoal-blue-700 font-regular', [
+      p(classes: 'text-lg md:text-2xl text-charcoal-blue-700 font-regular', [
         .text(
           text ?? '',
         ),
