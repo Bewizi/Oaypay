@@ -3,6 +3,7 @@ import 'package:jaspr/jaspr.dart';
 import 'package:oaypay/components/app_button.dart';
 import 'package:oaypay/components/conatiner.dart';
 import 'package:oaypay/components/services.dart';
+import 'package:oaypay/pages/do_more.dart';
 import 'package:oaypay/pages/how_it_works.dart';
 import 'package:oaypay/pages/why_choose_us.dart';
 
@@ -51,6 +52,7 @@ class Home extends StatelessComponent {
       const OurServices(),
       const HowItWorks(),
       const WhyChooseUs(),
+      const DoMore(),
     ]);
   }
 }
