@@ -50,32 +50,31 @@ class WhyChooseUs extends StatelessComponent {
               ),
             ]),
           ]),
+          div(classes: 'mt-20', [
+            section(classes: 'flex gap-12 ', [
+              ...features.map(
+                (e) {
+                  return div([
+                    img(
+                      classes: 'w-16 mb-8 bg-pine-teal-800 p-4 rounded-full',
+                      src: '/svgs/${e['icon']}',
+                      alt: e['alt_text'],
+                    ),
+                    h4(classes: 'mb-5 text-white text-3xl font-bold  ', [
+                      .text(e['title']!),
+                    ]),
+                    p(classes: 'text-2xl text-white/80 font-regular  ', [
+                      .text(
+                        e['description']!,
+                      ),
+                    ]),
+                  ]);
+                },
+              ),
+            ]),
+          ]),
         ],
       ),
-
-      div(classes: 'mt-20', [
-        section(classes: 'flex gap-12 ', [
-          ...features.map(
-            (e) {
-              return div([
-                img(
-                  classes: 'w-16 mb-8 bg-pine-teal-800 p-4 rounded-full',
-                  src: '/svgs/${e['icon']}',
-                  alt: e['alt_text'],
-                ),
-                h4(classes: 'mb-5 text-white text-3xl font-bold  ', [
-                  .text(e['title']!),
-                ]),
-                p(classes: 'text-2xl text-white/80 font-regular  ', [
-                  .text(
-                    e['description']!,
-                  ),
-                ]),
-              ]);
-            },
-          ),
-        ]),
-      ]),
     ]);
   }
 }
