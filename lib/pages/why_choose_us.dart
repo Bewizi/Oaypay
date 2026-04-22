@@ -37,21 +37,21 @@ class WhyChooseUs extends StatelessComponent {
     return section(classes: 'py-20 bg-evergreen-900', [
       AppConatiner(
         children: [
-          section(classes: 'flex flex-col items-center justify-center', [
-            h6(classes: 'uppercase text-lime-cream-300 mb-4 text-xl  font-medium }', [
+          section(classes: 'flex flex-col md:items-center md:justify-center', [
+            h6(classes: 'uppercase text-lime-cream-300 mb-4 md:text-xl  font-medium }', [
               .text('why choose us?'),
             ]),
-            h2(classes: 'mb-5 text-white text-6xl font-medium w-3/4 text-center', [
+            h2(classes: 'mb-5 text-white text-4xl md:text-6xl font-medium md:w-3/4 md:text-center', [
               .text('Access your financial services all in one app'),
             ]),
-            p(classes: 'text-2xl text-white/80 font-regular text-center w-4/5', [
+            p(classes: 'text-lg md:text-2xl text-white/80 font-regular md:text-center md:w-4/5', [
               .text(
                 'We stand out for their convenience, cost savings, and enhanced security. Customers can manage their finances from anywhere using their computer or mobile device.',
               ),
             ]),
           ]),
           div(classes: 'mt-20', [
-            section(classes: 'flex gap-12 ', [
+            section(classes: 'flex flex-col md:flex-row  gap-12 ', [
               ...features.map(
                 (e) {
                   return div([
@@ -60,10 +60,10 @@ class WhyChooseUs extends StatelessComponent {
                       src: '/svgs/${e['icon']}',
                       alt: e['alt_text'],
                     ),
-                    h4(classes: 'mb-5 text-white text-3xl font-bold  ', [
+                    h4(classes: 'mb-5 text-white  text-xl md:text-3xl font-bold  ', [
                       .text(e['title']!),
                     ]),
-                    p(classes: 'text-2xl text-white/80 font-regular  ', [
+                    p(classes: 'text-lg md:text-2xl text-white/80 font-regular  ', [
                       .text(
                         e['description']!,
                       ),
